@@ -21,6 +21,8 @@ jobs:
       with:
         java-version: '8'
         distribution: 'temurin'
+    - name: Update local repository
+      run: sudo apt update
     - name: Requirments
       run: sudo apt install libepoxy-dev libepoxy0 libsdl2-dev libsdl2-2.0-0 libx11-dev freeglut3-dev mesa-utils -y
     - name: Build with Ant
